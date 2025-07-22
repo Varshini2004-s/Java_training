@@ -1,0 +1,200 @@
+Q1.Write a java program to print Range of Even Numbers Without using Modulas operator 
+input :9
+output: 2 4 6 8
+
+Q2
+Quality Check for Premium Products
+In a retail store, some products are considered "premium" if their product ID is a Prime Number. A Prime Number is a number greater than 1 that has no divisors other than 1 and itself. Your task is to create a program that checks whether the given product ID qualifies as "Premium" or not.
+Imagine a store manager who needs to filter out premium products for special promotions. If a product ID is a Prime Number, it should be labeled as "Premium Product," otherwise, it should be labeled as "Regular Product."If the given product ID is 1 consider it as "Regular Product".
+
+Input Format
+The first line of input contains an integer N, which represents the product ID.
+
+Output Format
+Print "Premium Product" if the product ID is a Prime Number.
+Print "Regular Product" if the product ID is not a Prime Number.
+
+Example 1
+Sample Input 1
+17
+
+Sample Output 1
+Premium Product
+
+Explanation
+The number 17 is greater than 1 and has no divisors other than 1 and itself.
+Hence, the product ID 17 is a Prime Number, so the output is "Premium Product."
+
+
+Example 2
+Sample Input 2
+20
+
+Sample Output 2
+Regular Product
+
+Explanation
+The number 20 is greater than 1 but has divisors other than 1 and itself (e.g., 2, 4, 5, 10).
+Hence, the product ID 20 is not a Prime Number, so the output is "Regular Product."
+
+
+Q3
+Car Speed
+You have an electric car whose speed is derived from the battery percentage
+The battery percentage is denoted by an integer value N and the speed is the sum of all the factors of the battery percentage including 1. Your task is to find and return an integer value representing the speed of the car.
+
+Input Fomat
+Input1: An integer value N representing the battery percentage of the car.
+
+Output Fomat
+Return an integer value representing the speed of the car.
+
+Sample Input
+Input1:12
+
+Sample Output
+28
+
+Explanation
+Here, the given battery percent is 12 and the factors of 12 are 1, 2, 3, 4, 6, and 12. The sum of all the factors will be 1+2+3+4+6+12=28. Therefore 28 is returned as the output
+
+
+Q4
+Adam’s Charity
+Adam decides to be generous and do some charity. Starting today, from day 1 until day n, he gives i2 coins to charity on day ‘i’ (1 <= i <= n).
+Return the total coins he would give to charity.
+
+Example 1
+Sample Input 1
+Input1: 2
+
+Sample Output 1
+5
+
+Explanation
+There are 2 days.
+On the first day, he will give 12 = 1 coin.
+On the second day, he will give 22 = 4.
+Total no.of coins = 1 + 4 = 5
+
+Example 2
+Sample Input 2
+Input1: 5
+
+Sample Output 2
+55
+
+Explanation
+There are 5 days.
+On the first day, he will give 11 = 1 coin.
+On the second day, he will give 22 = 4 coins and therefore 9, 16 and 25 respectively on 3rd, 4th, 5th day.
+Total no of coins = 1 + 4 + 9 + 16 + 25 = 55
+
+
+Q5
+Inventory Check for Rare Items
+In a warehouse management system, rare items are considered special if their item ID is a Strong Number. A Strong Number is a number in which the sum of the factorial of each digit is equal to the number itself. Your task is to create a program that checks whether the given item ID is a Strong Number or not.
+Imagine a warehouse manager who needs to quickly identify rare items for cataloging. If an item ID is a Strong Number, it should be flagged as "Rare Item," otherwise, it should be marked as "Common Item."
+
+Input Format
+The first line of input contains an integer N, which represents the item ID.
+
+Output Format
+Print "Rare Item" if the item ID is a Strong Number.
+Print "Common Item" if the item ID is not a Strong Number.
+
+Example 1
+Sample Input 1
+145
+
+Sample Output 1
+Rare Item
+
+Explanation
+The digits of 145 are 1, 4, and 5.
+The factorial of 1 is 1, the factorial of 4 is 24, and the factorial of 5 is 120.
+The sum of factorials: 1 + 24 + 120 = 145, which is equal to the item ID.
+Hence, the item ID 145 is a Strong Number, so the output is "Rare Item."
+
+Example 2
+Sample Input 2
+123
+
+Sample Output 2
+Common Item
+
+Explanation
+The digits of 123 are 1, 2, and 3.
+The factorial of 1 is 1, the factorial of 2 is 2, and the factorial of 3 is 6.
+The sum of factorials: 1 + 2 + 6 = 9, which is not equal to the item ID.
+Hence, the item ID 123 is not a Strong Number, so the output is "Common Item."
+
+
+Q6
+Calculating Plant Growth Stages
+A biologist is studying the growth patterns of a rare plant species, which follows a unique pattern similar to the Fibonacci sequence. The plant's growth stages, in terms of the number of branches, can be predicted using this sequence: 0, 1, 1, 2, 3, 5, 8, 13, and so on. Given the number of months, the biologist wants to know how many branches the plant will have.
+Your task is to write a program that, given the number of months N, computes the number of branches the plant will have using the Fibonacci sequence. The biologist needs this information to understand the plant's future growth and to plan the necessary resources.
+
+Input Format
+An integer N representing the number of months.
+
+Output Format
+Print the number of branches as an integer.
+
+Example 1
+Sample Input 1
+6
+
+Sample Output 1
+0 1 1 2 3 5 8
+
+Explanation
+The Fibonacci sequence is 0, 1, 1, 2, 3, 5, 8...
+The 6th term in the Fibonacci sequence is 8, so after 6 months, the plant will have 8 branches.
+
+Example 2
+Sample Input 2
+9
+
+Sample Output 2
+0 1 1 2 3 5 8 13 21 34
+
+Explanation
+The Fibonacci sequence is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...
+The 9th term in the Fibonacci sequence is 34, so after 9 months, the plant will have 34 branches
+
+
+Q7
+Teaching Digit Positions
+In a mathematics class, a number system is being taught to students. Before teaching them 10's and 100's place, they will be taught the number positions. The positions will be starting from sequence number 1, and the direction will be from left to right.
+So if I want to find the second position of a digit in the number 90876, it will be 0. If the Kth digit exceeds the number position return -1.
+Write a program to find the Kth digit in a given number.
+
+Input Format
+The first line of input contains an integer N
+The second line of input contains an integer K
+
+Output Format
+The output prints an integer denoting the Kth digit in a given number
+
+Example 1
+Sample Input 1
+956781
+3
+
+Sample Output 1
+6
+
+Explanation
+The input by the user is 956781, where 9 is the first digit, 5 is the second digit, 6 is the third digit and so on. The user is asking for the third (3rd) digit in the given number, which is 6.
+
+Example 2
+Sample Input 2
+12345
+6
+
+Sample Output 2
+-1
+
+Explanation
+The given number is 12345. The number has only 5 digits. Since the user is asking for the sixth digit, which does not exist, the output is -1.
